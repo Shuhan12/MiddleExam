@@ -87,16 +87,17 @@
         padding-left: 5px;
     }
     .list_img {
-        width: 25px;
+        width: 22px;
     }
     .img_up, .img_up:hover {
-        left: 100px;
+        left: 20%;
         width: 70%;
         z-index: 3;
     }
     .img_down, .img_down:hover {
-        top: 80px;
-        width: 70%;
+        top: 18%;
+        left: 0px;
+        width: 90%;
         z-index: 2;
     }
     .project {
@@ -104,7 +105,7 @@
         grid-template-rows: auto;
     }
     .white {
-        height: 80px;
+        height: 40px;
     }
     #android .img_up,
         #android .img_down {

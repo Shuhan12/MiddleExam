@@ -20,7 +20,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #FFFBEB;
-    padding: 50px 70px;
+    padding: 50px 40px;
     border-radius: 40px;
 }
 .gridbox {
@@ -113,18 +113,23 @@ section {
 }
 .img_up {
     position: absolute;
-    left: 250px;
-    width: 475px;
+    left: 14%;
+    width: 38%;
     z-index: 3;
 }
 .img_down {
     position: relative;
     top: 80px;
-    width: 475px;
+    left: -5%;
+    width: 85%;
     z-index: 2;
 }
-.img_up:hover, .img_down:hover {
-    width: 520px;
+.img_up:hover {
+    width: 44%;
+    z-index: 4;
+}
+.img_down:hover {
+    width: 95%;
     z-index: 4;
 }
 .project {
