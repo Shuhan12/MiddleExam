@@ -1,0 +1,229 @@
+/* 通用設定 */
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: #F5EFE6;
+    color: #5B7DB1;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+a {
+    color: #5B7DB1;
+    text-decoration: none;
+}
+section {
+    padding: 80px 80px 0px 80px;
+}
+.background {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #FFFBEB;
+    padding: 50px 70px;
+    border-radius: 40px;
+}
+.gridbox {
+    display: grid;
+    width: 100%;
+    align-items: center;
+}
+.headline {
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%; 
+    text-align: center; 
+    padding-bottom: 20px;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+.my_text {
+    color: #3A98B9;
+    font-size: 22px;
+}
+#my_photo {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+}
+.slogan {
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+}
+.icon {
+    width: 44px;
+    color: #5B7DB1;
+    padding: 10px 5px;
+}
+
+
+/* about_排版 */
+#about .gridbox {
+    grid-template-columns: 35% 30% 35%;
+    align-items: center;
+}
+#about .item1 {
+    line-height: 225%; 
+    text-align: right; 
+    vertical-align: middle;
+}
+#about .item1 .headline {
+    padding-bottom: 0px;
+    text-align: right;
+}
+#about .item2 {
+    text-align: center; 
+    vertical-align: middle;
+}
+#about .item3 {
+    text-align: left; 
+    vertical-align: middle;
+}
+
+/* learn_排版 */
+#learned .gridbox{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+/* exp_排版 */
+#exp .gridbox{
+    grid-template-columns: 50% 49%;
+}
+#exp .item1 {
+    padding: 0px 25px;
+    border-right: 4px #5B7DB1 dashed;
+}
+#exp .item2 {
+    padding: 0px 25px;
+}
+.list_title {
+    padding: 10px 0px;
+}
+.list_text {
+    font-size: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.list_img {
+    width: 40px;
+    vertical-align: middle;
+}
+.img_up {
+    position: absolute;
+    left: 250px;
+    width: 475px;
+    z-index: 3;
+}
+.img_down {
+    position: relative;
+    top: 80px;
+    width: 475px;
+    z-index: 2;
+}
+.img_up:hover, .img_down:hover {
+    width: 520px;
+    z-index: 4;
+}
+.project {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.white {
+    height: 110px;
+}
+#topic {
+    width: 100%; 
+    border-top: 4px #5B7DB1 dashed; 
+    margin-top: 20px; 
+    padding: 0px 25px;
+}
+#topic .headline {
+    width: 100%; 
+    padding: 20px 0px;
+}
+
+/* 百分圖 */
+.circle{
+    --width: 140px;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(#82AAE3 var(--deg), #BFEAF5 var(--deg));
+    position: relative;
+    z-index: 1;
+}
+.circle-inside{
+    --bar-width: 30px;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #FFFBEB;
+    width: calc(var(--width) - var(--bar-width));
+    height: calc(var(--width) - var(--bar-width));
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* 頁首 */
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #E8D5C4;
+    z-index: 10;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+header nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: #3A98B9;
+    font-weight: bold;
+}
+
+/* 頁尾 */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #E8D5C4;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 100px;
+}
+
+/* 回到頂部 */
+.gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #3A98B9;
+}
+.gotop a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
