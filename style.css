@@ -84,7 +84,7 @@ section {
 
 /* learn_排版 */
 #learned .gridbox{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 35px;
 }
 
