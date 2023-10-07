@@ -42,8 +42,8 @@
     /* learn_排版 */
     #learned .gridbox {
         grid-template-columns: none;
-        grid-template-rows: 20% 20% 20% 20% 20%;
         width: fit-content;
+        grid-row-gap: 0px;
     }
     #learned .circle {
         margin: 20px 0px;
